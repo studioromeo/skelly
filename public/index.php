@@ -7,7 +7,7 @@ $settings = require __DIR__ . '/../src/config.php';
 $app = new \Slim\App($settings);
 
 // Set up dependencies
-require __DIR__ . '/../src/dependencies.php';
+require __DIR__ . '/../src/services.php';
 
 // Register middleware
 require __DIR__ . '/../src/middleware.php';
