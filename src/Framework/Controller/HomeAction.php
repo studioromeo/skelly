@@ -21,7 +21,6 @@ final class HomeAction
     {
         $this->logger->info("Home page action dispatched");
 
-        $name = $request->getAttribute('name', 'World');
         $response->getBody()->write('The time is ' . $this->timer->getTime());
         return $response;
     }
